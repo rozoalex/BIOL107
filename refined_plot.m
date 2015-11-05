@@ -45,8 +45,8 @@ function refined_plot()
   %suptitle('Gaussian fit parameters of mouse arm response as a function of location');
   %'a' parameter:
   subplot(2,2,1)%subplot for a
-  [X1,Y1] = cumhist(a_wt_good,[-10 10],1);
-  [X2,Y2] = cumhist(a_ko_good,[-10 10],1);
+  [X1,Y1] = cumhist(a_wt_good,[-10 5],1);
+  [X2,Y2] = cumhist(a_ko_good,[-10 5],1);
   hold on
   plot(X1, Y1)
   plot(X2, Y2)
@@ -65,8 +65,8 @@ function refined_plot()
   legend('wild-type','knockout','Location','southeast')
   %'c' parameter:
   subplot(2,2,3)%subplot for c
-  [X1,Y1] = cumhist(c_wt_good,[0 20],1);
-  [X2,Y2] = cumhist(c_ko_good,[0 20],1);
+  [X1,Y1] = cumhist(c_wt_good,[0 10],1);
+  [X2,Y2] = cumhist(c_ko_good,[0 10],1);
   hold on
   plot(X1, Y1)
   plot(X2, Y2)
@@ -75,8 +75,8 @@ function refined_plot()
   legend('wild-type','knockout','Location','southeast')
   %'d' parameter:
   subplot(2,2,4)%subplot for d
-  [X1,Y1] = cumhist(d_wt_good,[0 10],1);
-  [X2,Y2] = cumhist(d_ko_good,[0 10],1);
+  [X1,Y1] = cumhist(d_wt_good,[0 8],1);
+  [X2,Y2] = cumhist(d_ko_good,[0 8],1);
   hold on
   plot(X1, Y1)
   plot(X2, Y2)
