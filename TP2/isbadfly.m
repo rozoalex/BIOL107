@@ -4,3 +4,4 @@ function boolianResult = isbadfly(times,crossings)
   %and 0 if the data is okay.
   
 end
+%Aaron
